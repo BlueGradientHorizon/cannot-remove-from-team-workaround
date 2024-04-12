@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "cannot-remove-from-team-workaround",
+	"version": "${version}",
+	"name": "\"Cannot remove from team\" workaround",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cannot-remove-from-team-workaround/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.bluegradienthorizon.cannotremovefromteamworkaround.CannotRemoveFromTeamWorkaround"
+		],
+		"client": [
+			"com.bluegradienthorizon.cannotremovefromteamworkaround.CannotRemoveFromTeamWorkaroundClient"
+		]
+	},
+	"mixins": [
+		"cannot-remove-from-team-workaround.mixins.json",
+		{
+			"config": "cannot-remove-from-team-workaround.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.9",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
