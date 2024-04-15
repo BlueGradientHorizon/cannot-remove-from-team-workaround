@@ -1,5 +1,6 @@
 # "Cannot remove from team" workaround
 [MC-270728](https://bugs.mojang.com/browse/MC-270728)
+[Modrinth](https://modrinth.com/mod/cannot-remove-from-team-workaround)
 
 On some buggy servers you may have noticeable lag spikes caused by `Error executing task on client`:
 ```text
